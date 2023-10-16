@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cubic_polynomial_planner</name>
+  <version>0.1.0</version>
+  <description>A cubic_polynomial_planner package</description>
+  <maintainer email="syedshabbir@mail.mcgill.ca">syedshabbir</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>genmsg</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+</package>

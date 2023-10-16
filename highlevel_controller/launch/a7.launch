@@ -1,0 +1,10 @@
+<launch>
+
+	<include file="$(find kortex_gazebo)/launch/gen3_dyn_with_gripper.launch">
+	</include>
+	<node name="highlevel_controller_server" pkg="highlevel_controller" type="highlevel_controller_server" output="screen"/>
+	<node name="highlevel_controller_client" pkg="highlevel_controller" type="highlevel_controller_client" output="screen"/>
+	<rosparam command="load" file="$(find highlevel_controller)/config/config.yaml" />
+	<rosparam command="load" file="$(find highlevel_controller)/config/a7.yaml" />
+
+</launch>

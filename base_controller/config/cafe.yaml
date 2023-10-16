@@ -1,0 +1,39 @@
+model_name: husky
+cmd_topic_name: /husky_velocity_controller/cmd_vel
+
+initial:
+  x: 3.0
+  y: 9.0
+  phi: -1.0
+   
+target:
+  x: -3.0
+  y: -10.0  
+  phi: 1.0
+
+########################## YOU CAN CHANGE ANY PARAM BELOW ####################
+###  you can modify the values below
+###  you can also define maximum acceleration/deceleration, etc 
+
+fbk_topic_name: /gazebo/model_states
+lsr_topic_name: /front/scan
+world: cafe
+
+
+update_frequency: 1000
+min_distance_to_obstacles: 0.9
+
+limit:
+  speed: 0.5 
+  omega: 0.5  
+
+# Path planning
+target_1:
+  x:    3.0
+  y:   -3.0
+
+target_2:
+  x:  -4.0
+  y:  -8.0
+
+epsilon: 0.4

@@ -1,0 +1,31 @@
+home:
+  x: -0.4
+  y: -0.4
+  z: 0.4
+
+default_position:
+  x: 0.0
+  y: 0.6
+  z: 0.4
+
+open_gripper:
+  position: 0.4
+  max_effort: 0.5
+
+pregrasp_position:
+  x: 0.0
+  y: 0.6
+  z: 0.25
+
+grasp:
+  position: 0.8
+  max_effort: 1.0
+
+release_position:
+  x: 0.5
+  y: 0.3
+  z: 0.29
+
+release:
+  position: 0.5
+  max_effort: 0.5

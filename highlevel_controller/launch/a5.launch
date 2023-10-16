@@ -1,0 +1,8 @@
+<launch>
+
+	<include file="$(find kortex_gazebo)/launch/gen3_dynamics.launch" />
+	<node name="highlevel_controller_node" pkg="highlevel_controller" type="highlevel_controller_node" output="screen"/>
+	<rosparam command="load" file="$(find highlevel_controller)/config/config.yaml" />
+	<rosparam command="load" file="$(find highlevel_controller)/config/default-target.yaml" />
+
+</launch>

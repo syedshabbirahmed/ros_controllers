@@ -1,0 +1,5 @@
+<launch>
+
+	<node name="inver_kinematic_controller_node" pkg="inverse_kinematic_controller" type="inverse_kinematic_controller_node" output="screen"/>
+
+</launch>

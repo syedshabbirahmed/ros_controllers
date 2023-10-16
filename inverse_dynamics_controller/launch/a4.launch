@@ -1,0 +1,6 @@
+<launch>
+
+	<node name="inverse_dynamics_controller_node" pkg="inverse_dynamics_controller" type="inverse_dynamics_controller_node" output="screen"/>
+	<rosparam command="load" file="$(find inverse_dynamics_controller)/config/config.yaml" />
+
+</launch>
